@@ -1,122 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Shyam Sharma - Full Stack App Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    </head>
-    <style>
-        body{
-            font-family: Adam, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        }
 
-        .img-header{
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shyam Sharma - Full Stack App Developer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .img-header {
+        max-height: 50px;
+        border-radius: 50px;
+    }
+
+    .text-header {
+        background: linear-gradient(90deg, #DE0B0B 36%, #1075F9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        font-size: 1.6em;
+        margin-top: 10px;
+    }
+
+    .text-descrip {
+        font-size: calc(100% + 1vw);
+        font-weight: 500;
+    }
+
+    .hero {
+        background-color: #EF5A5A;
+        position: relative;
+        padding: 10px;
+        color: white;
+        bottom: 270px;
+        right: 20px;
+        border: 10px solid #7E5AEF;
+        padding-bottom: 20px;
+    }
+
+    .hero-bg {
+        background-color: #2CB47B;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .gd-projects{
+        height: 70px;
+    }
+
+    .bt-projects {
+        background-color: #f1516f;
+        position: relative;
+        width: max-content;
+        color: white;
+        bottom: 60px;
+        padding: 20px 50px 20px 50px;
+        right: 10px;
+        font-size: 1.2em;
+    }
+
+    .bt-projects-bg {
+        background-color: #7E5AEF;
+    }
+
+    .bt-social {
+        border: 5px solid #2CB47B;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        font-weight: 600;
+        text-align: center;
+        font-size: 0.9em;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+
+    @media (min-width: 768px) {
+
+        .img-header {
             max-height: 80px;
             border-radius: 80px;
         }
-
-        .text-header{
-            background: linear-gradient(90deg,#DE0B0B 36%,#1075F9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
+        .text-header {
+            font-size: 2em;
         }
 
-        .hero{
+        .text-descrip {
+            font-size: 1.7em;
+            font-weight: 500;
+            margin-top: -30px;
+        }
+
+        .gd-projects{
+            height: 80px;
+        }
+
+        .bt-projects {
+            background-color: #f1516f;
+            position: relative;
+            color: white;
+            bottom: 65px;
+            padding: 20px 50px 20px 50px;
+            right: 10px;
+            font-size: 1.6em;
+        }
+
+        .bt-social {
+            width: 200px;
+            font-size: 1.2em;
+            margin-left: 20px;
+        }
+
+        .hero {
             background-color: #EF5A5A;
             position: relative;
             padding: 50px;
             color: white;
             bottom: 270px;
-             right: 20px;
-             border: 10px solid #7E5AEF;
+            right: 20px;
+            border: 10px solid #7E5AEF;
         }
 
-        .hero-bg{
-            background-color: #2CB47B; 
+        .hero-bg {
+            background-color: #2CB47B;
             padding: 50px;
         }
+    }
+</style>
 
-        .bt-projects{
-            background-color: #f1516f;
-            position: relative;
-            color: white;
-            bottom: 70px;
-            padding: 30px 50px 30px 50px;
-            right: 10px;
-            font-size: 1.6em;
-        }
+<body>
+    <div class="container-fluid py-3">
+        <div class="d-flex flex-row">
+            <img class="img-header" src="https://pbs.twimg.com/profile_images/1011581434090287104/ur-P1b7j_400x400.jpg">
+            <h1 class="ml-3 text-header">shyam sharma</h1>
+        </div>
+        <div class="container mt-5" style="height: 250px">
+            <div class="h-100 hero-bg">
 
-        .bt-projects-bg{
-            background-color: #7E5AEF; 
-        }
-
-        .bt-social{
-            border: 5px solid #2CB47B;
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            color: black;
-            font-weight: 600;
-            font-size: 1.2em;
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .text-descrip{
-            margin-top: -20px;
-            font-size: calc(100% + 1vw);
-        }
-    </style>
-    <body class="px-3">
-        <div class="container-fluid py-3">
-            <div class="d-flex flex-row">
-                <img class="img-header"  src="https://pbs.twimg.com/profile_images/1011581434090287104/ur-P1b7j_400x400.jpg" >
-                <h1 class="mt-3 ml-3 font-weight-bold text-header">shyam sharma</h1>
             </div>
-            <div class="container mt-5" style="height: 250px">
-                <div class="h-100 hero-bg">
-                    
-                </div>
-                <div class="h-100 hero">
-                    <p class="font-weight-bold text-descrip">
-                                            hi! i'm shyam.
+            <div class="h-100 hero">
+                <p class="text-descrip">
+                    hi! i'm shyam.
                     a college student, app developer from india.
 
                     i am passionate about building cutting-edge and elegant products designed to solve problems.
-                    </p>
-                </div>
+                </p>
             </div>
-            <div class="container mt-1">
-                <div class="row justify-content-center">
-                    <div class="mt-4" style="height: 80px;">
-                        <div class="h-100 bt-projects-bg">
-                    
-                        </div>
-                        <a class="bt-projects">PROJECTS</a>
+        </div>
+        <div class="container mt-1">
+            <div class="row justify-content-center">
+                <div class="mt-4 gd-projects">
+                    <div class="h-100 bt-projects-bg">
+
                     </div>
-                    <div class="ml-5 mt-4" style="height: 80px;">
-                        <div class="h-100 bt-projects-bg">
-                    
-                        </div>
-                        <a class="bt-projects">SKILLS</a>
-                    </div>
+                    <a class="bt-projects">PROJECTS</a>
                 </div>
-            </div>
-            <div class="container-fluid mt-4">
-                <div class="row justify-content-center">
-                    <a class="bt-social">GITHUB</a>
-                    <a class="bt-social">TWITTER</a>
-                    <a class="bt-social">EMAIL</a>
-                    <a class="bt-social">DOWNLOAD CV</a>
-                    <a class="bt-social">INSTAGRAM</a>
+                <div class="ml-5 mt-4 gd-projects" >
+                    <div class="h-100 bt-projects-bg">
+
+                    </div>
+                    <a class="bt-projects">SKILLS</a>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <a class="bt-social col">GITHUB</a>
+                <a class="bt-social col">TWITTER</a>
+                <a class="bt-social col">EMAIL</a>
+                <a class="bt-social col">DOWNLOAD CV</a>
+                <a class="bt-social col">INSTAGRAM</a>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
