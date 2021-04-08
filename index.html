@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    <link href="css/cyber.css" rel="stylesheet">
 </head>
 <style>
     body {
@@ -35,8 +37,9 @@
     }
 
     .text-descrip {
-        font-size: calc(100% + 1vw);
-        font-weight: 500;
+        font-size: calc(90% + 1vw);
+        margin-top: 10px;
+        font-weight: 100;
     }
 
     .hero {
@@ -83,7 +86,7 @@
     }
 
     .bt-social {
-        border: 5px solid #2CB47B;
+        border: 2px solid #2CB47B;
         padding: 10px;
         padding-left: 10px;
         padding-right: 10px;
@@ -107,6 +110,21 @@
         background-color: #F9F9F9;
         }
 
+    .dev-name{
+        font-size: 1.6em;
+    }
+
+    .dev-tag{
+        font-weight: 600;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        width: fit-content;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
 
     @media (min-width: 768px) {
 
@@ -119,9 +137,8 @@
         }
 
         .text-descrip {
-            font-size: 1.7em;
-            font-weight: 500;
-            margin-top: -30px;
+            font-size: 1.4em;
+            font-weight: 100;
         }
 
         .gd-projects{
@@ -147,9 +164,9 @@
         .hero {
             background-color: #EF5A5A;
             position: relative;
-            padding: 50px;
+            padding: 10px;
             color: white;
-            bottom: 270px;
+            bottom: 300px;
             right: 20px;
             border: 10px solid #7E5AEF;
         }
@@ -165,20 +182,25 @@
     <div class="container-fluid py-3">
         <img class="img-header" src="https://pbs.twimg.com/profile_images/1011581434090287104/ur-P1b7j_400x400.jpg">
         <h1 class="ml-3 text-header">shyam sharma</h1>
-        <div class="container mt-5" style="height: 250px">
+        <div class="container mt-5" style="height: 280px">
             <div class="h-100 hero-bg">
 
             </div>
             <div class="h-100 hero">
-                <p class="text-descrip">
-                    hi! i'm shyam.
-                    a college student, app developer from india.
+                <div class="dev-name text-center">hi, i'm shyam</div>
+                <div>
+                    <div class="dev-tag">APP DEVELOPER</div>
+                    <div class="dev-tag">UI & UX DESIGNER</div>
+                </div>
+                <p class="text-descrip text-center">
+                    
+                    I am a college student and an app developer from india.
 
                     i am passionate about building cutting-edge and elegant products designed to solve problems.
                 </p>
             </div>
         </div>
-        <div class="container mt-1">
+        <!-- <div class="container mt-1">
             <div class="row justify-content-center">
                 <div class="mt-4 gd-projects">
                     <div class="h-100 bt-projects-bg">
@@ -193,7 +215,27 @@
                     <a class="bt-projects">SKILLS</a>
                 </div>
             </div>
+        </div> -->
+        <div class="container mt-1">
+            <div class="row justify-content-center">
+                <div class="mt-4">
+                    <button class="cybr-btn">
+                        Projects<span aria-hidden>_</span>
+                        <span aria-hidden class="cybr-btn__glitch">Projects_</span>
+                        <span aria-hidden class="cybr-btn__tag">R25</span>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <button class="cybr-btn cybr-btn1">
+                        Skills<span aria-hidden>_</span>
+                        <span aria-hidden class="cybr-btn__glitch">Skills_</span>
+                        <span aria-hidden class="cybr-btn__tag">R25</span>
+                      </button>
+                </div>
+            </div>
         </div>
+        
+          
         <div class="container-fluid mt-4" style="max-width: 1500px;">
             <div class="row justify-content-center">
                 <a class="bt-social col">GITHUB</a>
@@ -202,6 +244,22 @@
                 <a class="bt-social col">SEE CV</a>
                 <a class="bt-social col">INSTAGRAM</a>
             </div>
+        </div>
+        <div class="container-fluid">
+            <h1>work/projects</h1>
+            <p class="text-center">define studio</p>
+            <div>
+                windows
+            </div>
+            <div>
+                android
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h1>skills</h1>
+        </div>
+        <div class="container-fluid">
+            <h1>education</h1>
         </div>
     </div>
 </body>
