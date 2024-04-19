@@ -164,6 +164,12 @@ body {
     font-size: 1.3em;
 }
 
+.header-desc{
+    font-style: italic;
+    font-weight: 200;
+    margin: 0px 0px 5px 0;
+}
+
 
 @media (min-width: 768px) {
 
