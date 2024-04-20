@@ -1,5 +1,5 @@
 # shyamshr93.github.io
 
-Portfolio Work in Progress
+Portfolio
 
-Link :- https://shyamshr93.github.io/
+https://shyamshr93.github.io/
