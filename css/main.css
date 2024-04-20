@@ -222,6 +222,7 @@ body {
 .app-sub-header {
     color: #ffffff9d;
     font-weight: 500;
+    padding: 0px 20px;
 }
 
 .header-desc {
@@ -236,6 +237,7 @@ body {
     color: var(--text-color);
     text-align: end;
     font-size: 1.2em;
+    text-decoration: none;
     margin-top: 10px;
 }
 
