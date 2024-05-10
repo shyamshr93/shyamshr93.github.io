@@ -3,6 +3,8 @@
     --text-color: #000;
     --main-bg: #f3f3f3;
     --about-bg: #fff;
+    --bs-emphasis-color: #fff;
+    --bs-body-bg: #000;
 }
 
 .dark {
@@ -274,6 +276,8 @@ footer {
     color: var(--text-color);
     margin-left: 7px;
 }
+
+
 
 
 @media (min-width: 768px) {
