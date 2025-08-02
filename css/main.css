@@ -5,13 +5,17 @@
     --about-bg: #fff;
     --bs-emphasis-color: #fff;
     --bs-body-bg: #000;
+    --textColor: #000;
+    --card-bg: #fff;
 }
 
 .dark {
-    --header-text: #000;
+    --header-text: #fff;
     --text-color: #fff;
     --main-bg: #171717;
     --about-bg: #1e1e1e;
+    --textColor: white;
+    --card-bg: #2b2b2b;
 }
 
 html {
@@ -21,6 +25,7 @@ html {
 body {
     font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     background-color: var(--main-bg);
+    color: var(--text-color);
 }
 
 .main-grid {
@@ -152,18 +157,19 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid;
 }
 
 .text-header {
     color: var(--text-color);
     font-size: 1.5em;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid;
     max-width: 150px;
 }
 
 .text-sub-header {
     font-weight: 600;
+    color: var(--text-color);
     font-size: 1.2em;
     margin-top: 1em;
 }
@@ -231,6 +237,7 @@ body {
     font-style: italic;
     font-weight: 200;
     font-size: 1.1em;
+    color: var(--text-color);
     margin: 0px 0px 10px 0;
 }
 
@@ -357,4 +364,23 @@ footer {
     .app-header {
         font-size: 5em;
     }
+}
+
+.btn-social {
+    text-decoration: none;
+    font-size: 1.3em;
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    margin-left: 8px;
+    border-radius: 40px;
+    background-color: var(--card-bg);
+    color: var(--textColor);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-social:hover {
+    color: var(--textColor);
+    transform: scale(1.05);
 }
